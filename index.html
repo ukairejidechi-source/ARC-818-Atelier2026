@@ -3,88 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Scholar's Atelier · Walkthrough</title>
-<meta name="description" content="Walkthrough film of The Scholar's Atelier, an executive office reimagined as a private academic retreat in Block B, Class B15, Baze University, Abuja. Grit & Stones, ARC 818 Final Studio.">
-<meta property="og:title" content="The Scholar's Atelier · Walkthrough">
-<meta property="og:description" content="An executive office that still feels like a classroom. Grit & Stones, Abuja.">
-<meta property="og:image" content="poster.jpg">
-<meta property="og:type" content="video.other">
+<title>The Scholar's Atelier · 360° Tour</title>
+<meta name="description" content="Four 360° panoramas of The Scholar's Atelier, an executive office reimagined as a private academic retreat in Block B, Class B15, Baze University, Abuja. Grit & Stones, ARC 818 Final Studio.">
+<meta property="og:title" content="The Scholar's Atelier · 360° Tour">
+<meta property="og:description" content="Stand in the room before it is built. Grit & Stones, Abuja.">
+<meta property="og:image" content="thumbs/2_centre.jpg">
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
-/* g+s editorial: ivory paper, deep teal, sand accents, thin geometric display, serif reading face */
+/* Brown-led Grit & Stones palette: the logo's sand-brown leads, deep espresso grounds it, the stones' teal is a small accent */
 :root{
-  --teal:#075B5B; --teal-2:#3F9C9E; --night:#06393A; --sand:#CAA271; --sage:#D2DBC3;
-  --ivory:#F5F1E8; --ink:#1F2A2A; --grey:#6B7777; --hair:#C5CCBD;
+  --brown:#C8996A;      /* logo brown */
+  --brown-d:#9C6B3F;    /* deeper brown for text on cream */
+  --espresso:#2E1F15;   /* hero + footer ground */
+  --espresso-2:#3D2A1D;
+  --cream:#F5ECE0;      /* page */
+  --card:#FBF6EF;
+  --ink:#2A1E16;
+  --muted:#7A6656;
+  --hair:#DCCBB6;
+  --sage:#CCD8C0;       /* logo stone */
+  --teal:#3C909C;       /* logo stone, used sparingly */
   --display:"Poppins",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --serif:"Lora",Georgia,"Times New Roman",serif;
-  --bg:var(--ivory); --fg:var(--ink); --card:#fff;
+  --bg:var(--cream); --fg:var(--ink);
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#0B2424; --fg:#ECE7DC; --ink:#ECE7DC; --grey:#A9B5B3; --hair:#2E4B4A; --card:#103030; --teal:#7FC4C4; color-scheme:dark }
+  :root{ --bg:#1E140D; --fg:#F1E6D8; --ink:#F1E6D8; --card:#2A1D14; --muted:#BFA98F; --hair:#4A3526; --brown-d:#D9AE80; color-scheme:dark }
 }
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.6;
   padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
 a{color:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,4vw);padding-right:max(16px,4vw)}
-.kicker{font-family:var(--display);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sand)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,4vw);padding-right:max(16px,4vw)}
+.kicker{font-family:var(--display);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brown)}
 /* hero */
-header.hero{background:var(--night);color:#fff;position:relative;overflow:hidden}
-header.hero .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
-header.hero .bar img{height:54px;width:auto}
-header.hero .bar .issue{font-family:var(--display);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cfe0dc;text-align:right;line-height:1.7}
-.mast{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap;padding-block:10px 26px;margin-bottom:28px}
-.mast .gs{font-family:var(--display);font-weight:300;font-size:clamp(84px,14vw,170px);line-height:.8;letter-spacing:-.02em}
-.mast .gs b{font-weight:300;color:var(--sand)}
-.mast .lines{font-family:var(--display);font-size:12px;letter-spacing:.08em;text-transform:uppercase;line-height:1.9;color:#e7efed;padding-bottom:8px}
+header.hero{background:var(--espresso);color:#F6EDE1;
+  background-image:radial-gradient(120% 90% at 85% 0%, rgba(200,153,106,.28), rgba(200,153,106,0) 60%)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+.bar img{height:56px;width:auto}
+.bar .issue{font-family:var(--display);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#D9C6AF;text-align:right;line-height:1.7}
+.mast{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap;padding-block:8px 0;margin-bottom:46px}
+.gs{font-family:var(--display);font-weight:300;font-size:clamp(84px,14vw,170px);line-height:.8;letter-spacing:-.02em;color:#F6EDE1}
+.gs b{font-weight:300;color:var(--brown)}
+.mast .lines{font-family:var(--display);font-size:12px;letter-spacing:.08em;text-transform:uppercase;line-height:1.9;color:#E3D3C0;padding-bottom:8px}
 .mast .lines strong{display:block;font-weight:500;font-size:15px;letter-spacing:.06em;color:#fff}
 h1{font-family:var(--display);font-weight:300;font-size:clamp(38px,6.4vw,76px);line-height:1.02;margin:6px 0 12px;letter-spacing:-.01em;text-wrap:balance}
-.stand{font-style:italic;font-size:clamp(17px,2vw,21px);max-width:44ch;color:#e9e4d8;margin:0 0 30px}
-/* player */
-.player{background:#000;border-radius:2px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
-.player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
-.under{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between;padding-block:14px 40px;font-family:var(--display);font-size:12px;letter-spacing:.06em;color:#cfe0dc}
-.under a.dl{border:1px solid var(--sand);color:#fff;text-decoration:none;padding:8px 14px;letter-spacing:.12em;text-transform:uppercase;font-size:11px}
-.under a.dl:hover,.under a.dl:focus-visible{background:var(--sand);color:var(--night);outline:none}
-/* chapters */
+h1 em{font-style:normal;color:var(--brown)}
+.stand{font-style:italic;font-size:clamp(17px,2vw,21px);max-width:46ch;color:#E9DCCB;margin:0 0 28px}
+/* viewer */
+.viewer{position:relative;background:#120C08;border-radius:3px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45);
+  aspect-ratio:16/9;max-height:78vh;width:100%;touch-action:none;user-select:none;-webkit-user-select:none}
+@media (max-width:700px){.viewer{aspect-ratio:4/5}}
+.viewer canvas{display:block;width:100%;height:100%;cursor:grab}
+.viewer canvas:active{cursor:grabbing}
+.viewer .hud{position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;pointer-events:none}
+.viewer .label{pointer-events:none;background:rgba(46,31,21,.82);color:#F6EDE1;padding:10px 14px;border-left:4px solid var(--brown);max-width:min(440px,70%)}
+.viewer .label b{display:block;font-family:var(--display);font-weight:500;font-size:15px}
+.viewer .label span{font-size:13.5px;line-height:1.45;color:#E3D3C0}
+.viewer .tools{display:flex;gap:6px;pointer-events:auto}
+.viewer button.ico{font:inherit;font-family:var(--display);font-size:12px;letter-spacing:.06em;color:#F6EDE1;background:rgba(46,31,21,.82);
+  border:1px solid rgba(200,153,106,.6);padding:8px 11px;cursor:pointer;border-radius:2px}
+.viewer button.ico:hover,.viewer button.ico:focus-visible{background:var(--brown);color:var(--espresso);outline:none}
+.viewer button.ico[aria-pressed="true"]{background:var(--brown);color:var(--espresso)}
+.viewer .compass{position:absolute;top:14px;right:14px;width:118px;background:rgba(46,31,21,.82);padding:8px;border-radius:2px}
+.viewer .compass svg{display:block;width:100%;height:auto}
+.viewer .hint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.5);color:#fff;font-family:var(--display);font-size:13px;padding:9px 14px;pointer-events:none;transition:opacity .8s}
+.viewer .load{position:absolute;inset:0;display:grid;place-items:center;color:#E3D3C0;font-family:var(--display);font-size:13px;letter-spacing:.1em;text-transform:uppercase;background:#120C08;transition:opacity .4s}
+@media (max-width:700px){.viewer .compass{width:88px}.viewer .label span{display:none}.viewer .label{padding:7px 10px}.viewer .label b{font-size:13px}
+  .viewer .hud{flex-direction:column-reverse;align-items:flex-start;gap:8px;bottom:12px}.viewer button.ico{padding:6px 9px;font-size:11px}}
+/* standpoints */
+.stands{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-block:16px 44px;align-items:start}
+@media (max-width:760px){.stands{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stands button{all:unset;cursor:pointer;display:block;color:#E9DCCB;border-top:2px solid rgba(200,153,106,.35);padding-top:10px}
+.stands button img{display:block;width:100%;height:auto;aspect-ratio:420/198;object-fit:cover;opacity:.8;transition:opacity .2s}
+.stands button:hover img,.stands button[aria-current="true"] img{opacity:1}
+.stands button[aria-current="true"]{border-top-color:var(--brown)}
+.stands button:focus-visible{outline:2px solid var(--brown);outline-offset:3px}
+.stands .num{font-family:var(--display);font-weight:500;font-size:12px;color:var(--brown);letter-spacing:.1em}
+.stands .nm{font-family:var(--display);font-size:15px;color:#fff;display:block;margin-top:6px}
+.stands .dd{font-size:13px;color:#CDB9A2;line-height:1.4;display:block}
+/* body sections */
 section{padding-block:56px}
-.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:48px}
-@media (max-width:860px){.grid{grid-template-columns:1fr;gap:28px}}
-h2{font-family:var(--display);font-weight:300;font-size:clamp(28px,3.6vw,40px);line-height:1.1;color:var(--teal);margin:8px 0 14px}
-.chapters{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--fg)}
-.chapters li{border-bottom:1px solid var(--hair)}
-.chapters button{all:unset;cursor:pointer;display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:14px;align-items:baseline;width:100%;padding:13px 0}
-.chapters button:focus-visible{outline:2px solid var(--sand);outline-offset:2px}
-.chapters .t{font-family:var(--display);font-weight:500;font-size:13px;color:var(--sand);font-variant-numeric:tabular-nums}
-.chapters .n{font-family:var(--display);font-weight:500;font-size:15px}
-.chapters .d{display:block;font-size:14.5px;color:var(--grey);line-height:1.45;margin-top:2px}
-.chapters .go{font-family:var(--display);font-size:11px;letter-spacing:.14em;color:var(--grey);text-transform:uppercase}
-.chapters li.on .n{color:var(--teal)}
-.chapters li.on .go{color:var(--teal)}
-p.drop::first-letter{float:left;font-family:var(--display);font-weight:300;font-size:64px;line-height:.8;padding:6px 10px 0 0;color:var(--sand)}
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1.5px solid var(--fg);margin-top:8px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:48px}
+@media (max-width:860px){.grid{grid-template-columns:1fr;gap:26px}}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(28px,3.6vw,40px);line-height:1.1;color:var(--brown-d);margin:8px 0 14px}
+p.drop::first-letter{float:left;font-family:var(--display);font-weight:300;font-size:64px;line-height:.8;padding:6px 10px 0 0;color:var(--brown)}
+.how{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--fg)}
+.how li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:13px 0;border-bottom:1px solid var(--hair)}
+.how .k{font-family:var(--display);font-weight:500;color:var(--brown-d);font-size:13px}
+.how .v{font-family:var(--display);font-size:15px}
+.how .v small{display:block;font-family:var(--serif);font-size:14px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1.5px solid var(--fg);margin-top:8px}
 @media (max-width:860px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .facts div{padding:14px 14px 16px 0;border-bottom:1px solid var(--hair)}
-.facts dt{font-family:var(--display);font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+.facts dt{font-family:var(--display);font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .facts dd{margin:4px 0 0;font-family:var(--display);font-size:16px}
-/* gallery */
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-@media (max-width:700px){.gallery{grid-template-columns:1fr}}
-.gallery figure{margin:0}
-.gallery img{display:block;width:100%;height:auto;max-width:100%}
-.gallery figcaption{font-family:var(--display);font-size:12px;color:var(--grey);padding:8px 0 4px}
-.gallery figcaption b{color:var(--teal);font-weight:500;margin-right:8px}
-blockquote{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(24px,3.2vw,36px);line-height:1.25;color:var(--teal);border-top:1.5px solid var(--teal);padding-top:18px;max-width:30ch}
-footer{background:var(--night);color:#dfe9e6;padding-block:40px;font-family:var(--display);font-size:13px}
+.dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.dl a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--hair);padding:14px;font-family:var(--display);font-size:14px}
+.dl a:hover,.dl a:focus-visible{border-color:var(--brown);outline:none}
+.dl a small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.dl a span{color:var(--brown-d);font-weight:500}
+blockquote{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(24px,3.2vw,36px);line-height:1.25;color:var(--brown-d);border-top:1.5px solid var(--brown);padding-top:18px;max-width:30ch}
+footer{background:var(--espresso);color:#E3D3C0;padding-block:40px;font-family:var(--display);font-size:13px}
 footer .row{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end}
-footer .tag{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--sand);margin:0 0 6px}
-footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
-@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+footer .tag{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--brown);margin:0 0 6px}
+footer small{display:block;color:#B9A58E;letter-spacing:.04em;margin-top:6px}
+.accent{color:var(--teal)}
 </style>
 </head>
 <body>
@@ -99,19 +128,42 @@ footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
       <div class="gs" aria-label="g plus s">g<b>+</b>s</div>
       <div class="lines"><strong>Grit and Stones</strong>/ Interiors · Architecture · Abuja /<br>/ A proposal for the Distinguished Visiting Professor /<br>/ Baze University · Block B, Class B15 /</div>
     </div>
-    <div class="kicker">Feature / Interior / Walkthrough film</div>
-    <h1>The Scholar's Atelier</h1>
-    <p class="stand">An executive office that still feels like a classroom: a library you can climb, a desk ruled like a notebook, a wall to think on, and a bed for the nights the work runs late.</p>
-    <div class="player">
-      <video id="film" controls playsinline preload="metadata" poster="poster.jpg">
-        <source src="walkthrough.mp4" type="video/mp4">
-        Your browser cannot play this video. <a href="walkthrough.mp4">Download the walkthrough (MP4)</a>.
-      </video>
+    <div class="kicker">Feature / Interior / 360° tour</div>
+    <h1>The Scholar's Atelier <em>in 360°</em></h1>
+    <p class="stand">Stand in the room before it is built. Drag to look around, pick one of four standpoints, and turn slowly: every wall has something made for it.</p>
+
+    <div class="viewer" id="viewer">
+      <canvas id="gl" aria-label="Interactive 360 degree panorama. Drag to look around."></canvas>
+      <div class="compass" aria-hidden="true">
+        <svg viewBox="-4 -4 92 76" id="plan">
+          <rect x="0" y="0" width="84" height="68.2" fill="#F5ECE0" stroke="#C8996A" stroke-width="1.6"/>
+          <rect x="8" y="0" width="68" height="4.5" fill="#9C6B3F"/>
+          <rect x="31" y="9.7" width="22" height="8.5" fill="#C8996A"/>
+          <rect x="80" y="0" width="4" height="49" fill="#9C6B3F"/>
+          <rect x="78" y="49" width="6" height="19" fill="#7A5232"/>
+          <rect x="32.9" y="47" width="18" height="20.2" fill="#CCD8C0"/>
+          <rect x="21" y="67.4" width="42" height="0.8" fill="#3C909C"/>
+          <rect x="0" y="20" width="4.6" height="24" fill="#3C909C"/>
+          <circle cx="42" cy="32.4" r="6" fill="none" stroke="#B8913F" stroke-width="1"/>
+          <g id="marks"></g>
+          <g id="cone"><path d="M0 0 L-12 -24 A26 26 0 0 1 12 -24 Z" fill="rgba(200,153,106,.55)"/><circle r="2.6" fill="#C0504D"/></g>
+          <text x="42" y="-0.8" font-size="4.2" text-anchor="middle" fill="#E3D3C0" font-family="Poppins,Arial">N</text>
+        </svg>
+      </div>
+      <div class="hud">
+        <div class="label"><b id="capt">The Ledger desk</b><span id="capd"></span></div>
+        <div class="tools">
+          <button class="ico" id="spin" type="button" aria-pressed="true" title="Auto-rotate">Rotate</button>
+          <button class="ico" id="zin" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+          <button class="ico" id="zout" type="button" title="Zoom out" aria-label="Zoom out">−</button>
+          <button class="ico" id="fs" type="button" title="Full screen">Full screen</button>
+        </div>
+      </div>
+      <div class="hint" id="hint">Drag to look around · scroll or pinch to zoom</div>
+      <div class="load" id="load">Loading panorama…</div>
     </div>
-    <div class="under">
-      <span>68 seconds · 1280 × 720 · design model built from the Week 3 drawings</span>
-      <a class="dl" href="walkthrough.mp4" download>Download MP4</a>
-    </div>
+
+    <nav class="stands" id="stands" aria-label="Standpoints"></nav>
   </div>
 </header>
 
@@ -119,12 +171,18 @@ footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
   <section>
     <div class="wrap grid">
       <div>
-        <div class="kicker">The film</div>
-        <h2>One minute, door to bed</h2>
-        <p class="drop">The walk starts at door D01 and moves past the Ledger desk and its north light, along the 3.9 m iroko library with its brass ladder, to the rest zone on the deep-teal south wall. It turns to the Thinking Wall and the tea pantry, stops under the Halo, then stays at the bed while the lighting changes from Study to Reading, Salon and Late night.</p>
-        <p>Pick a chapter to jump straight to it.</p>
+        <div class="kicker">The tour</div>
+        <h2>Four places to stand</h2>
+        <p class="drop">Class B15 is a 57.24 m² classroom with a 4.6 m ceiling, two north windows and two doors to the corridor. We kept all of it and furnished it like the study of a collector-scholar: an iroko library you can climb on the east wall, the Ledger desk under the north light, a bed against the deep-teal south wall, and a Thinking Wall to the west.</p>
+        <p>These panoramas come from the design model built from the Week 3 drawings, lit in the daytime <em>Study</em> scene. The small plan in the corner shows where you are standing and which way you are facing.</p>
       </div>
-      <ol class="chapters" id="chapters"></ol>
+      <ol class="how">
+        <li><span class="k">01</span><span class="v">Look around<small>Drag with a mouse or a finger. Arrow keys work too.</small></span></li>
+        <li><span class="k">02</span><span class="v">Zoom<small>Scroll, pinch, or use the + and − buttons.</small></span></li>
+        <li><span class="k">03</span><span class="v">Move<small>Choose a standpoint under the viewer, or press 1 to 4.</small></span></li>
+        <li><span class="k">04</span><span class="v">Rest your hand<small>Rotate turns the view slowly on its own. Any drag stops it.</small></span></li>
+        <li><span class="k">05</span><span class="v">Go big<small>Full screen works on phones, tablets and laptops.</small></span></li>
+      </ol>
     </div>
   </section>
 
@@ -138,7 +196,7 @@ footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
         <div><dt>Typology</dt><dd>Option B: executive office as academic retreat</dd></div>
         <div><dt>Programme</dt><dd>Site 7 Dec 2026, move in 12 Feb 2027</dd></div>
         <div><dt>Budget</dt><dd>₦40.0m to build, incl. VAT</dd></div>
-        <div><dt>Materials</dt><dd>Iroko, brass, terrazzo, teal, sage linen, adire</dd></div>
+        <div><dt>Materials</dt><dd>Iroko, brass, terrazzo, <span class="accent">teal</span>, sage linen, adire</dd></div>
         <div><dt>Design</dt><dd>Grit &amp; Stones · Ukaire Jidechi Uchechukwu</dd></div>
       </dl>
     </div>
@@ -146,13 +204,14 @@ footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
 
   <section style="padding-top:0">
     <div class="wrap">
-      <div class="kicker">Stills</div>
-      <h2>First look</h2>
-      <div class="gallery">
-        <figure><img src="img/r1_top.jpg" alt="Study and library with north light on the Ledger desk" loading="lazy" width="1600" height="529"><figcaption><b>01</b>Study and library, north light on the Ledger desk</figcaption></figure>
-        <figure><img src="img/r1_bot.jpg" alt="Rest wall in deep teal with fluted headboard and brass pendants" loading="lazy" width="1600" height="529"><figcaption><b>02</b>The rest wall, deep teal and brass</figcaption></figure>
-        <figure><img src="img/r2_top.jpg" alt="The Halo pendant over the centre of the room, desk and library" loading="lazy" width="1600" height="529"><figcaption><b>03</b>The Halo over the centre of the room</figcaption></figure>
-        <figure><img src="img/r2_bot.jpg" alt="View south from the desk chair to the bed and tea pantry" loading="lazy" width="1600" height="529"><figcaption><b>04</b>From the desk chair, looking south</figcaption></figure>
+      <div class="kicker">Downloads</div>
+      <h2>The four panoramas</h2>
+      <p style="max-width:62ch;margin-top:0">Equirectangular JPEGs, 4096 × 2048. They open in any 360° photo viewer and can be uploaded to most 360° sharing sites.</p>
+      <div class="dl">
+        <a href="pano/1_desk.jpg" download><span>01</span> The Ledger desk<small>4096 × 2048 · 0.8 MB</small></a>
+        <a href="pano/2_centre.jpg" download><span>02</span> Under the Halo<small>4096 × 2048 · 0.8 MB</small></a>
+        <a href="pano/3_rest.jpg" download><span>03</span> The rest zone<small>4096 × 2048 · 0.8 MB</small></a>
+        <a href="pano/4_lounge.jpg" download><span>04</span> Lounge and Thinking Wall<small>4096 × 2048 · 0.8 MB</small></a>
       </div>
     </div>
   </section>
@@ -171,41 +230,132 @@ footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
       Grit &amp; Stones · Architecture &amp; Interior Design Studio, Abuja · The world is our canvas.
       <small>Ukaire Jidechi Uchechukwu · ID BU/26/PGS/13755 · ARC 818 Interior Architecture, Final Studio, Week 4 · Baze University</small>
     </div>
-    <img src="logo.png" alt="" style="height:46px;width:auto">
+    <img src="logo.png" alt="" style="height:48px;width:auto">
   </div>
 </footer>
 
 <script>
-const CH = [
-  [0,    "Title",            "Grit & Stones presents The Scholar's Atelier"],
-  [4,    "Threshold",        "Entering through door D01"],
-  [8.8,  "The Ledger desk",  "North light, the book credenza kept below the sills"],
-  [16.8, "The library",      "3.9 m of iroko shelves and a rolling brass ladder"],
-  [26,   "The rest zone",    "Deep-teal wall, fluted headboard, sage curtain"],
-  [35,   "The Thinking Wall","Chalk leaf, whiteboard and a seminar bench"],
-  [42,   "Tea pantry",       "Terrazzo top, fridge, kettle and record player"],
-  [47,   "The Halo",         "The room's crown, over the chess table"],
-  [52.8, "Light after dark", "Study, Reading, Salon, Late night"],
-  [62.4, "Walk in yourself", "The interactive 360° tour"]
+// ---------------------------------------------------------------- standpoints (plan metres: x east, y north)
+const W = 8.399, D = 6.816;
+const PANOS = [
+  {id: '1_desk',   n: '01', name: 'The Ledger desk',           x: 4.20, y: 4.25, yaw: 0,   d: 'North light on the desk, the book credenza below the sills, the brass cable spine.'},
+  {id: '2_centre', n: '02', name: 'Under the Halo',            x: 4.20, y: 3.15, yaw: 90,  d: 'The centre of the room under the Halo, facing the 3.9 m iroko library and its ladder.'},
+  {id: '3_rest',   n: '03', name: 'The rest zone',             x: 4.20, y: 2.55, yaw: 180, d: 'The bed on the deep-teal south wall, fluted headboard, brass bedside pendants.'},
+  {id: '4_lounge', n: '04', name: 'Lounge and Thinking Wall',  x: 2.10, y: 4.50, yaw: 300, d: 'Margin chair, adire panel, the chalk leaf and the seminar bench.'}
 ];
-const v = document.getElementById('film'), ol = document.getElementById('chapters');
-const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
-CH.forEach(([t, n, d], i) => {
-  const li = document.createElement('li');
-  const b = document.createElement('button');
-  b.type = 'button';
-  b.innerHTML = `<span class="t">${fmt(t)}</span><span><span class="n"></span><span class="d"></span></span><span class="go">Play</span>`;
-  b.querySelector('.n').textContent = n; b.querySelector('.d').textContent = d;
-  b.addEventListener('click', () => {
-    v.currentTime = t; v.play().catch(() => {});
-    v.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
+
+// ---------------------------------------------------------------- WebGL equirectangular viewer (no library)
+const cv = document.getElementById('gl');
+const gl = cv.getContext('webgl', {antialias: false}) || cv.getContext('experimental-webgl');
+const load = document.getElementById('load'), hint = document.getElementById('hint');
+if (!gl) { load.textContent = 'This browser cannot show the 360° view. Use the downloads below.'; }
+const VS = 'attribute vec2 p; varying vec2 v; void main(){ v=p; gl_Position=vec4(p,0.,1.); }';
+const FS = `precision highp float; varying vec2 v; uniform sampler2D t; uniform float yaw, pitch, fov, asp;
+const float PI=3.14159265;
+void main(){
+  float f=tan(fov*.5); vec3 d=normalize(vec3(v.x*f*asp, 1.0, v.y*f));      // camera: x right, y forward, z up
+  float cp=cos(pitch), sp=sin(pitch); d=vec3(d.x, d.y*cp-d.z*sp, d.y*sp+d.z*cp);
+  float cy=cos(yaw), sy=sin(yaw); d=vec3(d.x*cy+d.y*sy, -d.x*sy+d.y*cy, d.z);  // yaw: 0 = north, + = towards east
+  float lon=atan(d.x, d.y), lat=asin(clamp(d.z,-1.,1.));
+  gl_FragColor=texture2D(t, vec2(lon/(2.*PI)+.5, .5-lat/PI));
+}`;
+let prog, texs = {}, cur = 0;
+function sh(type, src) { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; }
+if (gl) {
+  prog = gl.createProgram(); gl.attachShader(prog, sh(gl.VERTEX_SHADER, VS)); gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, FS)); gl.linkProgram(prog); gl.useProgram(prog);
+  const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(prog, 'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+}
+const U = n => gl.getUniformLocation(prog, n);
+function loadTex(id) {
+  return new Promise((res, rej) => {
+    if (texs[id]) return res(texs[id]);
+    const img = new Image();
+    img.onload = () => {
+      const t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, t);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, img);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      texs[id] = t; res(t);
+    };
+    img.onerror = rej; img.src = 'pano/' + id + '.jpg';
   });
-  li.appendChild(b); ol.appendChild(li);
+}
+const view = {yaw: 0, pitch: 0, fov: 80, spin: true};
+let target = null;
+const rad = d => d * Math.PI / 180;
+function draw() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const w = Math.round(cv.clientWidth * dpr), h = Math.round(cv.clientHeight * dpr);
+  if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  gl.viewport(0, 0, w, h);
+  gl.uniform1f(U('yaw'), rad(view.yaw)); gl.uniform1f(U('pitch'), rad(view.pitch));
+  gl.uniform1f(U('fov'), rad(view.fov)); gl.uniform1f(U('asp'), w / h);
+  gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+}
+// ---------------------------------------------------------------- mini plan
+const S = 10; // 1 m = 10 svg units
+const marks = document.getElementById('marks'), cone = document.getElementById('cone');
+PANOS.forEach((p, i) => {
+  const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+  c.setAttribute('cx', p.x * S); c.setAttribute('cy', (D - p.y) * S); c.setAttribute('r', 2.2);
+  c.setAttribute('fill', '#2E1F15'); c.setAttribute('stroke', '#F5ECE0'); c.setAttribute('stroke-width', '.8'); marks.appendChild(c);
 });
-v.addEventListener('timeupdate', () => {
-  let k = 0; CH.forEach(([t], i) => { if (v.currentTime >= t) k = i; });
-  [...ol.children].forEach((li, i) => li.classList.toggle('on', i === k));
+function plan() { const p = PANOS[cur]; cone.setAttribute('transform', `translate(${p.x * S} ${(D - p.y) * S}) rotate(${view.yaw})`); }
+// ---------------------------------------------------------------- standpoint buttons
+const nav = document.getElementById('stands'), capt = document.getElementById('capt'), capd = document.getElementById('capd');
+PANOS.forEach((p, i) => {
+  const b = document.createElement('button'); b.type = 'button';
+  b.innerHTML = `<img src="thumbs/${p.id}.jpg" alt="" loading="lazy" width="420" height="198"><span class="num">${p.n}</span><span class="nm"></span><span class="dd"></span>`;
+  b.querySelector('.nm').textContent = p.name; b.querySelector('.dd').textContent = p.d;
+  b.addEventListener('click', () => go(i)); nav.appendChild(b);
 });
+async function go(i) {
+  if (!gl) return;
+  cur = i; const p = PANOS[i];
+  [...nav.children].forEach((b, k) => b.setAttribute('aria-current', k === i ? 'true' : 'false'));
+  capt.textContent = p.name; capd.textContent = p.d;
+  load.style.opacity = 1; load.style.display = 'grid';
+  try { const t = await loadTex(p.id); gl.bindTexture(gl.TEXTURE_2D, t); } catch (e) { load.textContent = 'Could not load this panorama.'; return; }
+  view.yaw = p.yaw; view.pitch = -2; view.fov = 80;
+  load.style.opacity = 0; setTimeout(() => load.style.display = 'none', 400);
+  PANOS.forEach((q, k) => { if (k !== i) loadTex(q.id).catch(() => {}); }); // preload the rest
+}
+// ---------------------------------------------------------------- interaction
+const vw = document.getElementById('viewer'); let drag = null, pinch = null; const pts = new Map();
+function stopSpin() { view.spin = false; document.getElementById('spin').setAttribute('aria-pressed', 'false'); hint.style.opacity = 0; }
+cv.addEventListener('pointerdown', e => { cv.setPointerCapture(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]); stopSpin();
+  if (pts.size === 1) drag = {x: e.clientX, y: e.clientY, yaw: view.yaw, pitch: view.pitch};
+  if (pts.size === 2) { const [a, b] = [...pts.values()]; pinch = {d: Math.hypot(a[0] - b[0], a[1] - b[1]), fov: view.fov}; drag = null; } });
+cv.addEventListener('pointermove', e => { if (!pts.has(e.pointerId)) return; pts.set(e.pointerId, [e.clientX, e.clientY]);
+  if (pinch && pts.size === 2) { const [a, b] = [...pts.values()]; view.fov = Math.max(35, Math.min(100, pinch.fov * pinch.d / Math.max(1, Math.hypot(a[0] - b[0], a[1] - b[1])))); return; }
+  if (drag) { const k = view.fov / cv.clientHeight; view.yaw = drag.yaw - (e.clientX - drag.x) * k; view.pitch = Math.max(-85, Math.min(85, drag.pitch + (e.clientY - drag.y) * k)); } });
+const up = e => { pts.delete(e.pointerId); if (pts.size < 2) pinch = null; if (pts.size === 0) drag = null; };
+cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+cv.addEventListener('wheel', e => { e.preventDefault(); stopSpin(); view.fov = Math.max(35, Math.min(100, view.fov + e.deltaY * 0.04)); }, {passive: false});
+document.getElementById('zin').onclick = () => { view.fov = Math.max(35, view.fov - 8); };
+document.getElementById('zout').onclick = () => { view.fov = Math.min(100, view.fov + 8); };
+document.getElementById('spin').onclick = e => { view.spin = !view.spin; e.currentTarget.setAttribute('aria-pressed', String(view.spin)); };
+document.getElementById('fs').onclick = () => {
+  const el = vw; if (document.fullscreenElement) document.exitFullscreen();
+  else if (el.requestFullscreen) el.requestFullscreen().catch(() => {}); else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+};
+addEventListener('keydown', e => {
+  if (e.target.closest && e.target.closest('input,textarea')) return;
+  if (e.key >= '1' && e.key <= '4') go(+e.key - 1);
+  const r = vw.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
+  if (e.key === 'ArrowLeft') { view.yaw -= 4; stopSpin(); } if (e.key === 'ArrowRight') { view.yaw += 4; stopSpin(); }
+  if (e.key === 'ArrowUp') { view.pitch = Math.min(85, view.pitch + 4); } if (e.key === 'ArrowDown') { view.pitch = Math.max(-85, view.pitch - 4); }
+});
+setTimeout(() => hint.style.opacity = 0, 4500);
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches; if (reduce) { view.spin = false; document.getElementById('spin').setAttribute('aria-pressed', 'false'); }
+let last = performance.now();
+function loop(now) { const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  if (view.spin && !drag) view.yaw += 4 * dt;
+  view.yaw = ((view.yaw % 360) + 360) % 360;
+  if (gl) { draw(); plan(); } requestAnimationFrame(loop); }
+if (gl) { go(0); requestAnimationFrame(loop); }
 </script>
 </body>
 </html>
