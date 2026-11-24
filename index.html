@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Scholar's Atelier · Walkthrough</title>
+<meta name="description" content="Walkthrough film of The Scholar's Atelier, an executive office reimagined as a private academic retreat in Block B, Class B15, Baze University, Abuja. Grit & Stones, ARC 818 Final Studio.">
+<meta property="og:title" content="The Scholar's Atelier · Walkthrough">
+<meta property="og:description" content="An executive office that still feels like a classroom. Grit & Stones, Abuja.">
+<meta property="og:image" content="poster.jpg">
+<meta property="og:type" content="video.other">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+/* g+s editorial: ivory paper, deep teal, sand accents, thin geometric display, serif reading face */
+:root{
+  --teal:#075B5B; --teal-2:#3F9C9E; --night:#06393A; --sand:#CAA271; --sage:#D2DBC3;
+  --ivory:#F5F1E8; --ink:#1F2A2A; --grey:#6B7777; --hair:#C5CCBD;
+  --display:"Poppins",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --bg:var(--ivory); --fg:var(--ink); --card:#fff;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0B2424; --fg:#ECE7DC; --ink:#ECE7DC; --grey:#A9B5B3; --hair:#2E4B4A; --card:#103030; --teal:#7FC4C4; color-scheme:dark }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.6;
+  padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,4vw);padding-right:max(16px,4vw)}
+.kicker{font-family:var(--display);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sand)}
+/* hero */
+header.hero{background:var(--night);color:#fff;position:relative;overflow:hidden}
+header.hero .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+header.hero .bar img{height:54px;width:auto}
+header.hero .bar .issue{font-family:var(--display);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cfe0dc;text-align:right;line-height:1.7}
+.mast{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap;padding-block:10px 26px;margin-bottom:28px}
+.mast .gs{font-family:var(--display);font-weight:300;font-size:clamp(84px,14vw,170px);line-height:.8;letter-spacing:-.02em}
+.mast .gs b{font-weight:300;color:var(--sand)}
+.mast .lines{font-family:var(--display);font-size:12px;letter-spacing:.08em;text-transform:uppercase;line-height:1.9;color:#e7efed;padding-bottom:8px}
+.mast .lines strong{display:block;font-weight:500;font-size:15px;letter-spacing:.06em;color:#fff}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(38px,6.4vw,76px);line-height:1.02;margin:6px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+.stand{font-style:italic;font-size:clamp(17px,2vw,21px);max-width:44ch;color:#e9e4d8;margin:0 0 30px}
+/* player */
+.player{background:#000;border-radius:2px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+.under{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between;padding-block:14px 40px;font-family:var(--display);font-size:12px;letter-spacing:.06em;color:#cfe0dc}
+.under a.dl{border:1px solid var(--sand);color:#fff;text-decoration:none;padding:8px 14px;letter-spacing:.12em;text-transform:uppercase;font-size:11px}
+.under a.dl:hover,.under a.dl:focus-visible{background:var(--sand);color:var(--night);outline:none}
+/* chapters */
+section{padding-block:56px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:48px}
+@media (max-width:860px){.grid{grid-template-columns:1fr;gap:28px}}
+h2{font-family:var(--display);font-weight:300;font-size:clamp(28px,3.6vw,40px);line-height:1.1;color:var(--teal);margin:8px 0 14px}
+.chapters{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--fg)}
+.chapters li{border-bottom:1px solid var(--hair)}
+.chapters button{all:unset;cursor:pointer;display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:14px;align-items:baseline;width:100%;padding:13px 0}
+.chapters button:focus-visible{outline:2px solid var(--sand);outline-offset:2px}
+.chapters .t{font-family:var(--display);font-weight:500;font-size:13px;color:var(--sand);font-variant-numeric:tabular-nums}
+.chapters .n{font-family:var(--display);font-weight:500;font-size:15px}
+.chapters .d{display:block;font-size:14.5px;color:var(--grey);line-height:1.45;margin-top:2px}
+.chapters .go{font-family:var(--display);font-size:11px;letter-spacing:.14em;color:var(--grey);text-transform:uppercase}
+.chapters li.on .n{color:var(--teal)}
+.chapters li.on .go{color:var(--teal)}
+p.drop::first-letter{float:left;font-family:var(--display);font-weight:300;font-size:64px;line-height:.8;padding:6px 10px 0 0;color:var(--sand)}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1.5px solid var(--fg);margin-top:8px}
+@media (max-width:860px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.facts div{padding:14px 14px 16px 0;border-bottom:1px solid var(--hair)}
+.facts dt{font-family:var(--display);font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+.facts dd{margin:4px 0 0;font-family:var(--display);font-size:16px}
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:700px){.gallery{grid-template-columns:1fr}}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;max-width:100%}
+.gallery figcaption{font-family:var(--display);font-size:12px;color:var(--grey);padding:8px 0 4px}
+.gallery figcaption b{color:var(--teal);font-weight:500;margin-right:8px}
+blockquote{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(24px,3.2vw,36px);line-height:1.25;color:var(--teal);border-top:1.5px solid var(--teal);padding-top:18px;max-width:30ch}
+footer{background:var(--night);color:#dfe9e6;padding-block:40px;font-family:var(--display);font-size:13px}
+footer .row{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end}
+footer .tag{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--sand);margin:0 0 6px}
+footer small{display:block;color:#a9c2bd;letter-spacing:.04em;margin-top:6px}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <img src="logo.png" alt="Grit &amp; Stones logo">
+      <div class="issue">Issue 01 · Week 4<br>ARC 818 Final Studio</div>
+    </div>
+    <div class="mast">
+      <div class="gs" aria-label="g plus s">g<b>+</b>s</div>
+      <div class="lines"><strong>Grit and Stones</strong>/ Interiors · Architecture · Abuja /<br>/ A proposal for the Distinguished Visiting Professor /<br>/ Baze University · Block B, Class B15 /</div>
+    </div>
+    <div class="kicker">Feature / Interior / Walkthrough film</div>
+    <h1>The Scholar's Atelier</h1>
+    <p class="stand">An executive office that still feels like a classroom: a library you can climb, a desk ruled like a notebook, a wall to think on, and a bed for the nights the work runs late.</p>
+    <div class="player">
+      <video id="film" controls playsinline preload="metadata" poster="poster.jpg">
+        <source src="walkthrough.mp4" type="video/mp4">
+        Your browser cannot play this video. <a href="walkthrough.mp4">Download the walkthrough (MP4)</a>.
+      </video>
+    </div>
+    <div class="under">
+      <span>68 seconds · 1280 × 720 · design model built from the Week 3 drawings</span>
+      <a class="dl" href="walkthrough.mp4" download>Download MP4</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap grid">
+      <div>
+        <div class="kicker">The film</div>
+        <h2>One minute, door to bed</h2>
+        <p class="drop">The walk starts at door D01 and moves past the Ledger desk and its north light, along the 3.9 m iroko library with its brass ladder, to the rest zone on the deep-teal south wall. It turns to the Thinking Wall and the tea pantry, stops under the Halo, then stays at the bed while the lighting changes from Study to Reading, Salon and Late night.</p>
+        <p>Pick a chapter to jump straight to it.</p>
+      </div>
+      <ol class="chapters" id="chapters"></ol>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker">The project</div>
+      <dl class="facts">
+        <div><dt>Client</dt><dd>Baze University, for the Distinguished Visiting Professor (Netherlands)</dd></div>
+        <div><dt>Site</dt><dd>Block B, Class B15, Abuja</dd></div>
+        <div><dt>Area</dt><dd>57.24 m², 4.6 m high</dd></div>
+        <div><dt>Typology</dt><dd>Option B: executive office as academic retreat</dd></div>
+        <div><dt>Programme</dt><dd>Site 7 Dec 2026, move in 12 Feb 2027</dd></div>
+        <div><dt>Budget</dt><dd>₦40.0m to build, incl. VAT</dd></div>
+        <div><dt>Materials</dt><dd>Iroko, brass, terrazzo, teal, sage linen, adire</dd></div>
+        <div><dt>Design</dt><dd>Grit &amp; Stones · Ukaire Jidechi Uchechukwu</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker">Stills</div>
+      <h2>First look</h2>
+      <div class="gallery">
+        <figure><img src="img/r1_top.jpg" alt="Study and library with north light on the Ledger desk" loading="lazy" width="1600" height="529"><figcaption><b>01</b>Study and library, north light on the Ledger desk</figcaption></figure>
+        <figure><img src="img/r1_bot.jpg" alt="Rest wall in deep teal with fluted headboard and brass pendants" loading="lazy" width="1600" height="529"><figcaption><b>02</b>The rest wall, deep teal and brass</figcaption></figure>
+        <figure><img src="img/r2_top.jpg" alt="The Halo pendant over the centre of the room, desk and library" loading="lazy" width="1600" height="529"><figcaption><b>03</b>The Halo over the centre of the room</figcaption></figure>
+        <figure><img src="img/r2_bot.jpg" alt="View south from the desk chair to the bed and tea pantry" loading="lazy" width="1600" height="529"><figcaption><b>04</b>From the desk chair, looking south</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <blockquote>“We did not hide the classroom. We furnished it like the study of a collector-scholar.”</blockquote>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div>
+      <p class="tag">Solid. Honest. Thoughtful.</p>
+      Grit &amp; Stones · Architecture &amp; Interior Design Studio, Abuja · The world is our canvas.
+      <small>Ukaire Jidechi Uchechukwu · ID BU/26/PGS/13755 · ARC 818 Interior Architecture, Final Studio, Week 4 · Baze University</small>
+    </div>
+    <img src="logo.png" alt="" style="height:46px;width:auto">
+  </div>
+</footer>
+
+<script>
+const CH = [
+  [0,    "Title",            "Grit & Stones presents The Scholar's Atelier"],
+  [4,    "Threshold",        "Entering through door D01"],
+  [8.8,  "The Ledger desk",  "North light, the book credenza kept below the sills"],
+  [16.8, "The library",      "3.9 m of iroko shelves and a rolling brass ladder"],
+  [26,   "The rest zone",    "Deep-teal wall, fluted headboard, sage curtain"],
+  [35,   "The Thinking Wall","Chalk leaf, whiteboard and a seminar bench"],
+  [42,   "Tea pantry",       "Terrazzo top, fridge, kettle and record player"],
+  [47,   "The Halo",         "The room's crown, over the chess table"],
+  [52.8, "Light after dark", "Study, Reading, Salon, Late night"],
+  [62.4, "Walk in yourself", "The interactive 360° tour"]
+];
+const v = document.getElementById('film'), ol = document.getElementById('chapters');
+const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+CH.forEach(([t, n, d], i) => {
+  const li = document.createElement('li');
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.innerHTML = `<span class="t">${fmt(t)}</span><span><span class="n"></span><span class="d"></span></span><span class="go">Play</span>`;
+  b.querySelector('.n').textContent = n; b.querySelector('.d').textContent = d;
+  b.addEventListener('click', () => {
+    v.currentTime = t; v.play().catch(() => {});
+    v.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
+  });
+  li.appendChild(b); ol.appendChild(li);
+});
+v.addEventListener('timeupdate', () => {
+  let k = 0; CH.forEach(([t], i) => { if (v.currentTime >= t) k = i; });
+  [...ol.children].forEach((li, i) => li.classList.toggle('on', i === k));
+});
+</script>
+</body>
+</html>
